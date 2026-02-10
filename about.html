@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - RAHUL ENGINEERS</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .mission-box {
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .mission-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h2 class="m-0 text-primary fw-bold">KEDAR <span class="text-warning">ENGINEERS</span></h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header mt-5">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-4 fw-bold">About Us</h1>
+            <p class="lead">Building Trust Through Engineering Excellence</p>
+        </div>
+    </header>
+
+    <!-- Mission & Vision -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="mission-box text-center border-bottom border-5 border-primary">
+                        <i class="fas fa-bullseye fa-4x text-primary mb-3"></i>
+                        <h2 class="mb-3">Our Mission</h2>
+                        <p class="text-muted">To deliver superior engineering solutions that exceed client expectations
+                            through innovation, quality, and sustainable practices. We aim to be the preferred partner
+                            for complex industrial challenges globally.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="mission-box text-center border-bottom border-5 border-warning">
+                        <i class="fas fa-eye fa-4x text-warning mb-3"></i>
+                        <h2 class="mb-3">Our Vision</h2>
+                        <p class="text-muted">To be a global leader in engineering and construction, recognized for our
+                            integrity, safety standards, and contribution to community development and infrastructure
+                            growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80"
+                        alt="Meeting" class="img-fluid rounded shadow">
+                    <div class="mt-4 p-4 bg-white shadow rounded border-start border-5 border-primary">
+                        <blockquote class="blockquote mb-0">
+                            <p class="fs-5 fst-italic">"Engineering is not just about building things; it's about
+                                building a better future for everyone."</p>
+                            <footer class="blockquote-footer mt-2">Founder, <cite title="Source Title">Kedar
+                                    Engineers</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5" data-aos="fade-left">
+                    <h2 class="mb-4">Our Journey</h2>
+                    <p>Established in 1998, RAHUL ENGINEERS has grown from a small consultancy firm to a full-scale
+                        engineering powerhouse. Over the decades, we have successfully executed over 200 projects across
+                        various sectors including automative, civil infrastructure, and heavy machinery.</p>
+                    <p>Our success is driven by our people. We believe in nurturing talent and fostering a culture of
+                        continuous learning and improvement. This approach has allowed us to stay ahead of the curve and
+                        adopt the latest technologies in our operations.</p>
+
+                    <h4 class="mt-4 mb-3">Core Values</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Integrity & Transparency
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Safety First</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Innovation</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Customer Centricity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Leadership</h2>
+                <p>Meet the visionaries behind our success</p>
+            </div>
+            <div class="row justify-content-center">
+                <!-- CEO -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card team-card h-100">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+                            class="card-img-top team-img-top" alt="CEO">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Rajesh Kedar</h4>
+                            <p class="text-primary fw-bold mb-1">Founder & CEO</p>
+                            <p class="card-text small text-muted">With 30+ years of experience in civil and mechanical
+                                engineering.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                                <a href="#" class="text-dark mx-2"><i class="fas fa-envelope fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Director 1 -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card team-card h-100">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+                            class="card-img-top team-img-top" alt="Director">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Priya Sharma</h4>
+                            <p class="text-primary fw-bold mb-1">Managing Director</p>
+                            <p class="card-text small text-muted">Expert in operations management and strategic
+                                planning.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                                <a href="#" class="text-dark mx-2"><i class="fas fa-envelope fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Director 2 -->
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card team-card h-100">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80"
+                            class="card-img-top team-img-top" alt="Director">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Amit Verma</h4>
+                            <p class="text-primary fw-bold mb-1">Technical Director</p>
+                            <p class="card-text small text-muted">A pioneer in robotics and automation technologies.</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="text-dark mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+                                <a href="#" class="text-dark mx-2"><i class="fas fa-envelope fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <!-- (Same footer as index.html for consistency) -->
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">RAHUL ENGINEERS</h5>
+                    <p>Your trusted partner for industrial engineering solutions. We build with precision and passion.
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Products</h5>
+                    <p><a href="services.html" class="text-white" style="text-decoration: none;">Industrial
+                            Automation</a></p>
+                    <p><a href="services.html" class="text-white" style="text-decoration: none;">Civil Engineering</a>
+                    </p>
+                    <p><a href="services.html" class="text-white" style="text-decoration: none;">Mechanical Parts</a>
+                    </p>
+                    <p><a href="services.html" class="text-white" style="text-decoration: none;">Consultancy</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Quick Links</h5>
+                    <p><a href="about.html" class="text-white" style="text-decoration: none;">About Us</a></p>
+                    <p><a href="career.html" class="text-white" style="text-decoration: none;">Career</a></p>
+                    <p><a href="contact.html" class="text-white" style="text-decoration: none;">Contact Us</a></p>
+                    <p><a href="#" class="text-white" style="text-decoration: none;">Help</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Contact</h5>
+                    <p><i class="fas fa-home mr-3"></i> 123 Industrial Hub, New Delhi, India</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@kedarengineers.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-print mr-3"></i> +01 234 567 89</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>© 2024 <strong>RAHUL ENGINEERS</strong>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-end social-links">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

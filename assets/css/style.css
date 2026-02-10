@@ -1,0 +1,518 @@
+/* =========================================
+   1. Variables & Global Styles
+   ========================================= */
+:root {
+    --primary-color: #0d47a1;
+    /* Deep Blue */
+    --secondary-color: #ffca28;
+    /* Industrial Amber */
+    --accent-color: #e65100;
+    /* Safety Orange */
+    --dark-bg: #1a1a2e;
+    /* Dark Blue-Grey */
+    --light-bg: #f8f9fa;
+    --text-color: #333;
+    --glass-bg: rgba(255, 255, 255, 0.75);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-color);
+    background-color: #f0f2f5;
+    overflow-x: hidden;
+}
+
+
+a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Sections */
+.section-padding {
+    padding: 80px 0;
+    scroll-margin-top: 90px;
+    position: relative;
+    z-index: 1;
+    /* Removed white background to let body bg show for glassmorphism */
+}
+
+.bg-light-custom {
+    background-color: var(--light-bg);
+}
+
+/* =========================================
+   2. Navbar
+   ========================================= */
+.navbar {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #444 !important;
+    margin-left: 15px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn-cta {
+    background-color: var(--primary-color);
+    color: #fff !important;
+    border-radius: 30px;
+    padding: 8px 25px;
+    transition: all 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #08306b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 71, 161, 0.3);
+}
+
+/* =========================================
+   3. Hero Carousel
+   ========================================= */
+.hero-slider {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+
+
+.hero-slider .carousel-item {
+    height: 90vh;
+    min-height: 600px;
+    position: relative;
+    background-color: #000;
+}
+
+.hero-slider img {
+
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    /* Dark overlay effect */
+}
+
+.carousel-caption {
+    bottom: 30%;
+    z-index: 2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption h5 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+.carousel-caption p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   4. Glassmorphism Cards
+   ========================================= */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    height: 100%;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.glass-card:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.2);
+}
+
+.glass-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* =========================================
+   5. Section Titles
+   ========================================= */
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: var(--secondary-color);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* =========================================
+   6. Footer
+   ========================================= */
+footer {
+    background: var(--dark-bg);
+    color: #fff;
+    padding-top: 50px;
+}
+
+footer a {
+    color: #b0b0b0;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* =========================================
+   7. Responsive
+   ========================================= */
+@media (max-width: 768px) {
+    .hero-slider .carousel-item {
+        height: 70vh;
+    }
+
+    .carousel-caption h5 {
+        font-size: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .stats-section {
+        margin-top: 0;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+/* =========================================
+   8. Stats Section
+   ========================================= */
+
+section {
+    position: relative;
+    clear: both;
+}
+
+.stats-section {
+    background: var(--primary-color);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    margin-top: -1px;
+    /* removes thin gap issue */
+}
+
+#about {
+    position: relative;
+    z-index: 3;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.stat-box i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* =========================================
+   9. Why Choose Us
+   ========================================= */
+.feature-icon-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.feature-icon-wrapper {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: rgba(13, 71, 161, 0.1);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-icon-box:hover .feature-icon-wrapper {
+    background: var(--primary-color);
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+.feature-content h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.feature-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   10. Process Section
+   ========================================= */
+.process-step {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(255, 202, 40, 0.4);
+}
+
+.step-content h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Connecting line for desktop */
+@media (min-width: 992px) {
+    .process-step::after {
+        content: '';
+        position: absolute;
+        top: 45px;
+        right: -50%;
+        width: 100%;
+        height: 2px;
+        background: #e0e0e0;
+        z-index: 1;
+    }
+
+    .process-step:last-child::after {
+        display: none;
+    }
+}
+
+/* =========================================
+   11. Call to Action (CTA)
+   ========================================= */
+.cta-section {
+    background: linear-gradient(rgba(13, 71, 161, 0.9), rgba(13, 71, 161, 0.9)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* =====================================
+   ABSOLUTE FORCE CENTER ALL HEADINGS
+   ===================================== */
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center !important;
+    width: 100%;
+} */
+
+
+/* =====================================
+   Reviews / Testimonials
+   ===================================== */
+#reviews .glass-card {
+    padding: 40px;
+}
+
+.review-quote {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.review-name {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.review-company {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Center carousel arrows */
+#reviewCarousel .carousel-control-prev,
+#reviewCarousel .carousel-control-next {
+    width: 5%;
+}
+
+
+/* =====================================
+   Floating WhatsApp & Call Buttons
+   ===================================== */
+.floating-actions {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fab-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.fab-btn:hover {
+    transform: scale(1.1);
+}
+
+/* WhatsApp */
+.fab-btn.whatsapp {
+    background-color: #25D366;
+}
+
+/* Call */
+.fab-btn.call {
+    background-color: var(--primary-color);
+}
