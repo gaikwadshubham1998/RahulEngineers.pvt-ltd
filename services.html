@@ -13,6 +13,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/services.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
     <style>
         .page-header-services {
             background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&q=80');
@@ -27,148 +29,138 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <h2 class="m-0 text-primary fw-bold">KEDAR <span class="text-warning">ENGINEERS</span></h2>
-            </a>
+            <a class="navbar-brand" href="#"><i class="fas fa-cogs"></i> RAHUL ENGINEERS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item "><a class="nav-link " href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/career.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <a href="#contact" class="btn btn-cta">Get Quote</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- Page Header -->
-    <header class="page-header-services mt-5">
+    <header class="page-header mt-5">
         <div class="container" data-aos="fade-up">
             <h1 class="display-4 fw-bold">Our Services</h1>
-            <p class="lead">Comprehensive solutions for a complex world</p>
+            <p class="lead">Precision manufacturing and engineering solutions</p>
         </div>
     </header>
 
-    <!-- Services Grid (Flip Cards) -->
-    <section class="section-padding">
+    <!-- Services Section -->
+    <section class="section-padding bg-light">
         <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>What We Do</h2>
-                <p>We provide a wide range of engineering and industrial services</p>
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <!-- <h2>Our Services</h2>
+                <p>Precision manufacturing and engineering solutions</p> -->
             </div>
 
-            <div class="row">
+            <div class="row g-4">
+
                 <!-- Service 1 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <i class="fas fa-cogs"></i>
-                                <h3>Industrial Automation</h3>
-                            </div>
-                            <div class="flip-card-back">
-                                <h3>Automation</h3>
-                                <p>PLCs, SCADA, and robotics integration to streamline your manufacturing processes and
-                                    increase efficiency.</p>
-                                <a href="contact.html" class="btn btn-outline-light btn-sm mt-3">Inquire Now</a>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-cogs service-icon"></i>
+                            <h5 class="card-title mt-3">CNC Machining</h5>
+                            <p class="card-text">
+                                High-precision CNC milling and turning solutions.
+                            </p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#cncMachining">
+                                Know More
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <i class="fas fa-building"></i>
-                                <h3>Civil Engineering</h3>
-                            </div>
-                            <div class="flip-card-back">
-                                <h3>Civil Works</h3>
-                                <p>Structural design, construction supervision, and infrastructure development for
-                                    commercial and industrial projects.</p>
-                                <a href="contact.html" class="btn btn-outline-light btn-sm mt-3">Inquire Now</a>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-industry service-icon"></i>
+                            <h5 class="card-title mt-3">VMC Machining</h5>
+                            <p class="card-text">
+                                Complex components with tight tolerances.
+                            </p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#vmcMachining">
+                                Know More
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <i class="fas fa-hammer"></i>
-                                <h3>Mechanical Parts</h3>
-                            </div>
-                            <div class="flip-card-back">
-                                <h3>Fabrication</h3>
-                                <p>Custom mechanical parts manufacturing, CNC machining, and precision fabrication
-                                    services.</p>
-                                <a href="contact.html" class="btn btn-outline-light btn-sm mt-3">Inquire Now</a>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-wrench service-icon"></i>
+                            <h5 class="card-title mt-3">Tool & Die Manufacturing</h5>
+                            <p class="card-text">
+                                Press tools, jigs, fixtures, and dies.
+                            </p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#toolDie">
+                                Know More
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <i class="fas fa-bolt"></i>
-                                <h3>Electrical Works</h3>
-                            </div>
-                            <div class="flip-card-back">
-                                <h3>Electrical</h3>
-                                <p>HT/LT panel design, substation installation, and industrial wiring solutions ensuring
-                                    safety and compliance.</p>
-                                <a href="contact.html" class="btn btn-outline-light btn-sm mt-3">Inquire Now</a>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-microchip service-icon"></i>
+                            <h5 class="card-title mt-3">Prototype Development</h5>
+                            <p class="card-text">
+                                Rapid prototyping for product validation.
+                            </p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#prototype">
+                                Know More
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <i class="fas fa-tasks"></i>
-                                <h3>Project Management</h3>
-                            </div>
-                            <div class="flip-card-back">
-                                <h3>Consultancy</h3>
-                                <p>End-to-end project management, feasibility studies, and technical consultancy for
-                                    turnkey projects.</p>
-                                <a href="contact.html" class="btn btn-outline-light btn-sm mt-3">Inquire Now</a>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-ruler-combined service-icon"></i>
+                            <h5 class="card-title mt-3">Precision Inspection</h5>
+                            <p class="card-text">
+                                Quality inspection & dimensional accuracy.
+                            </p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#inspection">
+                                Know More
+                            </button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Service 6 -->
-                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <i class="fas fa-flask"></i>
-                                <h3>Quality Control</h3>
-                            </div>
-                            <div class="flip-card-back">
-                                <h3>Testing & QA</h3>
-                                <p>Material testing, non-destructive testing (NDT), and quality assurance certification
-                                    services.</p>
-                                <a href="contact.html" class="btn btn-outline-light btn-sm mt-3">Inquire Now</a>
-                            </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card service-card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-certificate service-icon"></i>
+                            <h5 class="card-title mt-3">Batch Production</h5>
+                            <p class="card-text">
+                                Small to medium volume production runs.
+                            </p>
+                            <button class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#batchProduction">
+                                Know More
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -176,6 +168,139 @@
             </div>
         </div>
     </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about our CNC manufacturing and tool room services</p>
+            </div>
+
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-md-6">
+                    <div class="accordion" id="faqLeft">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse1">
+                                    What CNC machining services do you offer?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse show" data-bs-parent="#faqLeft">
+                                <div class="accordion-body">
+                                    We offer CNC milling, CNC turning, VMC machining, precision drilling, tapping,
+                                    and custom part manufacturing for industrial applications.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse2">
+                                    What materials can you machine?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                                <div class="accordion-body">
+                                    We machine mild steel, stainless steel, aluminum, brass, copper, alloy steel,
+                                    engineering plastics, and special metals as per customer drawings.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse3">
+                                    Do you accept custom or prototype jobs?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
+                                <div class="accordion-body">
+                                    Yes, we specialize in custom jobs, prototypes, small batch production,
+                                    and high-precision components as per client specifications.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-6">
+                    <div class="accordion" id="faqRight">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse4">
+                                    What is your quality control process?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                                <div class="accordion-body">
+                                    We follow strict quality checks including dimensional inspection,
+                                    surface finish verification, and final testing to ensure zero-defect delivery.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse5">
+                                    What industries do you serve?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                                <div class="accordion-body">
+                                    We serve automotive, aerospace, electrical, industrial machinery,
+                                    fabrication units, and OEM manufacturers across India.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq6">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqCollapse6">
+                                    How can I request a quotation?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse6" class="accordion-collapse collapse" data-bs-parent="#faqRight">
+                                <div class="accordion-body">
+                                    You can contact us through our inquiry form, email, or phone.
+                                    Share your drawings or specifications, and our team will provide a quick quotation.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FLOATING ACTION BUTTONS ================= -->
+    <div class="floating-actions">
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/918983434112" target="_blank" class="fab-btn whatsapp" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Call Button -->
+        <a href="tel:+918983434112" class="fab-btn call" aria-label="Call Us">
+            <i class="fas fa-phone"></i>
+        </a>
+
+    </div>
+
+
 
     <!-- CTA Section -->
     <section class="section-padding bg-primary text-white text-center">
@@ -244,6 +369,151 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- CNC Machining Modal -->
+    <div class="modal fade" id="cncMachining" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">CNC Machining</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        We provide high-precision CNC machining services using advanced CNC lathes and machining
+                        centers.
+                        Our capabilities include aluminum, mild steel, stainless steel, brass, and alloy steels.
+                    </p>
+                    <ul>
+                        <li>2-Axis & Multi-Axis CNC Turning</li>
+                        <li>Tight tolerance machining (±0.01 mm)</li>
+                        <li>Automotive & industrial components</li>
+                        <li>Consistent repeatability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VMC Machining Modal -->
+    <div class="modal fade" id="vmcMachining" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">VMC Machining</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Our Vertical Machining Centers (VMC) deliver complex profiles, slots, and precision drilling
+                        with
+                        excellent surface finish.
+                    </p>
+                    <ul>
+                        <li>3-Axis VMC operations</li>
+                        <li>Complex component machining</li>
+                        <li>Jigs, fixtures & custom parts</li>
+                        <li>High dimensional accuracy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tool & Die Modal -->
+    <div class="modal fade" id="toolDie" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tool & Die Manufacturing</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        We design and manufacture high-quality press tools, dies, jigs, and fixtures to support
+                        efficient
+                        mass production.
+                    </p>
+                    <ul>
+                        <li>Press tools & dies</li>
+                        <li>Assembly jigs & fixtures</li>
+                        <li>Custom tool room solutions</li>
+                        <li>Long service life tools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prototype Modal -->
+    <div class="modal fade" id="prototype" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Prototype Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        We support rapid prototype development to help customers validate designs before full-scale
+                        production.
+                    </p>
+                    <ul>
+                        <li>Design verification</li>
+                        <li>Low-volume prototype machining</li>
+                        <li>Quick turnaround time</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inspection Modal -->
+    <div class="modal fade" id="inspection" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Precision Inspection</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Quality assurance using precision measuring instruments to ensure compliance with engineering
+                        drawings.
+                    </p>
+                    <ul>
+                        <li>Vernier, micrometer & height gauge</li>
+                        <li>Dimensional inspection reports</li>
+                        <li>Quality control compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Batch Production Modal -->
+    <div class="modal fade" id="batchProduction" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Batch Production</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        We handle small to medium batch production with consistent quality and on-time delivery.
+                    </p>
+                    <ul>
+                        <li>Repeat job production</li>
+                        <li>Cost-effective manufacturing</li>
+                        <li>Reliable delivery schedules</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -55,3 +55,59 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(statsSection);
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+        const linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+            link.classList.add("active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+});
+
+
+
+// contact 
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const company = document.getElementById("company").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value.trim();
+
+    // WhatsApp message format
+    const whatsappMessage = `
+    🔧 *New Inquiry from Website*
+
+    👤 Name: ${name}
+    🏢 Company: ${company || "N/A"}
+    📞 Phone: ${phone}
+    📧 Email: ${email}
+    ⚙ Service: ${service}
+
+    📝 Message:
+    ${message}
+    `;
+
+    // Replace with YOUR WhatsApp number (no + sign)
+    const whatsappNumber = "918983434112";
+
+    const whatsappURL =
+        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(whatsappURL, "_blank");
+
+    // Optional: reset form after sending
+    this.reset();
+});
+
+
