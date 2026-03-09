@@ -99,7 +99,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     `;
 
     // Replace with YOUR WhatsApp number (no + sign)
-    const whatsappNumber = "918983434112";
+    const whatsappNumber = "919890158854";
 
     const whatsappURL =
         `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;

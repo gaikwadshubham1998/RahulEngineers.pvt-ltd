@@ -1,5 +1,5 @@
 .btn-primary-custom {
-    background-color: #d4e723;
+    background-color: #093eb1;
     /* CNC orange */
     border: none;
     color: #fff;
@@ -10,7 +10,7 @@
 }
 
 .btn-primary-custom:hover {
-    background-color: #f07007;
+    background-color: #2ef507;
     transform: translateY(-1px);
 }
 

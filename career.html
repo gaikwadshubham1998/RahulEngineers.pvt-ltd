@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career - RAHUL ENGINEERS</title>
+    <title>Career -RAHUL INDUSTRIES</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome -->
@@ -30,7 +30,15 @@
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><i class="fas fa-cogs"></i> RAHUL ENGINEERS</a>
+            <a class="navbar-brand custom-logo" href="#">
+                <div class="logo-container">
+                    <i class="fas fa-industry logo-icon"></i>
+                    <div class="logo-text">
+                        <span class="company-name">RAHUL INDUSTRIES</span>
+                        <span class="Tagline">Precision Manufacturing Solutions</span>
+                    </div>
+                </div>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,7 +61,7 @@
     <header class="page-header-career mt-5">
         <div class="container" data-aos="fade-up">
             <h1 class="display-4 fw-bold">Join Our Team</h1>
-            <p class="lead">Build your future with RAHUL ENGINEERS</p>
+            <p class="lead">Build your future withRAHUL INDUSTRIES</p>
         </div>
     </header>
 
@@ -156,21 +164,24 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
-        <!-- (Same footer as index.html) -->
+        <!-- (Same footer as index.html for consistency) -->
         <div class="container text-center text-md-start">
             <div class="row text-center text-md-start">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-warning">RAHUL ENGINEERS</h5>
-                    <p>Your trusted partner for industrial engineering solutions. We build with precision and passion.
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">RAHUL INDUSTRIES</h5>
+                    <p>Your trusted partner for industrial engineering solutions. We build with precision and
+                        passion.
                     </p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 fw-bold text-warning">Products</h5>
                     <p><a href="services.html" class="text-white" style="text-decoration: none;">Industrial
                             Automation</a></p>
-                    <p><a href="services.html" class="text-white" style="text-decoration: none;">Civil Engineering</a>
+                    <p><a href="services.html" class="text-white" style="text-decoration: none;">Civil
+                            Engineering</a>
                     </p>
-                    <p><a href="services.html" class="text-white" style="text-decoration: none;">Mechanical Parts</a>
+                    <p><a href="services.html" class="text-white" style="text-decoration: none;">Mechanical
+                            Parts</a>
                     </p>
                     <p><a href="services.html" class="text-white" style="text-decoration: none;">Consultancy</a></p>
                 </div>
@@ -183,16 +194,16 @@
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 fw-bold text-warning">Contact</h5>
-                    <p><i class="fas fa-home mr-3"></i> 123 Industrial Hub, New Delhi, India</p>
-                    <p><i class="fas fa-envelope mr-3"></i> info@rahulengineers.com</p>
-                    <p><i class="fas fa-phone mr-3"></i> +91 8983434112</p>
-                    <p><i class="fas fa-print mr-3"></i> +01 234 567 89</p>
+                    <p><i class="fas fa-home mr-3"></i> T-Block <br>W-34,M.I.D.C.Bhosari,Pune-411026 </p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@rahulindustries.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +91-9890158854</p>
+                    <p><i class="fas fa-print mr-3"></i> 020-46700001</p>
                 </div>
             </div>
             <hr class="mb-4">
             <div class="row align-items-center">
                 <div class="col-md-7 col-lg-8">
-                    <p>© 2024 <strong>RAHUL ENGINEERS</strong>. All Rights Reserved.</p>
+                    <p>© 2026 <strong>RAHUL INDUSTRIES</strong>. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-5 col-lg-4">
                     <div class="text-center text-md-end social-links">
@@ -217,12 +228,12 @@
     <div class="floating-actions">
 
         <!-- WhatsApp Button -->
-        <a href="https://wa.me/918983434112" target="_blank" class="fab-btn whatsapp" aria-label="Chat on WhatsApp">
+        <a href="https://wa.me/91-9890158854" target="_blank" class="fab-btn whatsapp" aria-label="Chat on WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
 
         <!-- Call Button -->
-        <a href="tel:+918983434112" class="fab-btn call" aria-label="Call Us">
+        <a href="tel:+91-9890158854" class="fab-btn call" aria-label="Call Us">
             <i class="fas fa-phone"></i>
         </a>
 
@@ -232,6 +243,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script>
+
+        // Disable Right Click
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        });
+
+        // Disable Keyboard Shortcuts
+        document.onkeydown = function (e) {
+
+            // F12
+            if (e.keyCode == 123) {
+                return false;
+            }
+
+            // Ctrl+Shift+I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+                return false;
+            }
+
+            // Ctrl+Shift+J
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                return false;
+            }
+
+            // Ctrl+U
+            if (e.ctrlKey && e.keyCode == 85) {
+                return false;
+            }
+
+            // Ctrl+S
+            if (e.ctrlKey && e.keyCode == 83) {
+                return false;
+            }
+
+            // Ctrl+C
+            if (e.ctrlKey && e.keyCode == 67) {
+                return false;
+            }
+        };
+
+    </script>
 </body>
 
 </html>
