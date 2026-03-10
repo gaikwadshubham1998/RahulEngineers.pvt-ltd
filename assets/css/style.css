@@ -836,3 +836,55 @@ h6 {
         /* Prevents the button from being squashed */
     }
 }
+
+/* ================= HERO CAROUSEL MOBILE OPTIMIZATION ================= */
+
+@media (max-width: 480px) {
+
+    /* Center the hero content and add safe padding */
+    .hero-text {
+        padding: 0 20px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        /* Ensure it uses the full height of the item */
+    }
+
+    /* Scale down the main heading */
+    .hero-text h1 {
+        font-size: 26px !important;
+        /* Smaller, punchier size for mobile */
+        line-height: 1.2 !important;
+        margin-bottom: 15px !important;
+        font-weight: 700;
+    }
+
+    /* Adjust the description text */
+    .hero-text p {
+        font-size: 15px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 25px !important;
+        max-width: 90%;
+        /* Keeps text from hitting the very edges */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Resize the buttons for better thumb-tap ergonomics */
+    .hero-text .btn {
+        font-size: 14px !important;
+        padding: 10px 25px !important;
+        width: auto !important;
+        /* Prevents button from stretching full-width unless desired */
+        display: inline-block;
+    }
+
+    /* Ensure the carousel item itself doesn't overflow */
+    .carousel-item {
+        height: 80vh;
+        /* Adjust height based on your design preference */
+        min-height: 400px;
+    }
+}
