@@ -796,116 +796,51 @@ h6 {
 }
 
 
-
-/* ================= MOBILE OPTIMIZATION ================= */
-
 @media (max-width: 480px) {
 
-    /* Navbar */
+    /* 1. Ensure the main Navbar container doesn't overflow */
     .navbar {
-        padding: 8px 0;
+        padding: 8px 15px;
+        /* Added horizontal padding to keep items off the screen edge */
+        width: 100%;
+        overflow-x: hidden;
+        /* Prevents horizontal scroll */
     }
 
-    .company-name {
-        font-size: 14px;
-    }
-
-    .Tagline {
-        font-size: 10px;
-    }
-
-    /* Hero Section */
-    .hero-text h1 {
-        font-size: 24px;
-        line-height: 1.3;
-    }
-
-    .hero-text p {
-        font-size: 14px;
-    }
-
-    .hero-text .btn {
-        font-size: 14px;
-        padding: 8px 20px;
-    }
-
-    /* Stats Section */
-    .stat-number {
-        font-size: 24px;
-    }
-
-    .stat-label {
-        font-size: 12px;
-    }
-
-    /* About Section */
-    .section-title h2 {
-        font-size: 26px;
-    }
-
-    .lead {
-        font-size: 14px;
-    }
-
-    .check-list li {
-        font-size: 14px;
-    }
-
-    /* Services Cards */
-    .glass-card {
-        padding: 18px;
-    }
-
-    .glass-card h5 {
-        font-size: 16px;
-    }
-
-    /* Process Steps */
-    .process-step {
-        padding: 12px;
-    }
-
-    .step-number {
-        font-size: 20px;
-    }
-
-    /* CTA Section */
-    .cta-section h2 {
-        font-size: 24px;
-    }
-
-    .cta-section p {
-        font-size: 14px;
-    }
-
-    /* Footer */
-    footer p {
-        font-size: 13px;
-    }
-
-    footer h5 {
-        font-size: 16px;
-    }
-
-    /* Floating Buttons */
-    .fab-btn {
-        width: 45px;
-        height: 45px;
-        font-size: 20px;
-    }
-
-}
-
-@media (max-width: 480px) {
-
-    .hero-video {
-        object-fit: cover;
-        height: 100vh;
+    /* 2. Fix the layout of the brand and toggle */
+    .navbar .container,
+    .navbar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
 
-    .hero-text {
-        padding: 0 15px;
+    /* 3. Adjust logo size to make room for the toggle */
+    .company-name {
+        font-size: 14px;
+        white-space: nowrap;
+        /* Prevents the name from breaking into two lines */
+        max-width: 70%;
+        /* Ensures it doesn't push the toggle out */
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
+    /* 4. Fix the Navbar Toggle button */
+    .navbar-toggler {
+        padding: 4px 8px;
+        margin-right: 0;
+        /* Reset any negative margins */
+        font-size: 18px;
+        /* Slightly smaller icon for mobile */
+    }
+
+    /* 5. Ensure the Hero Section doesn't cause overflow */
+    .hero-text {
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+        /* Ensures padding doesn't add to width */
+    }
 }
