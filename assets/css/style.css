@@ -798,49 +798,41 @@ h6 {
 
 @media (max-width: 480px) {
 
-    /* 1. Ensure the main Navbar container doesn't overflow */
+    /* Force the main navbar to stay within the screen */
     .navbar {
-        padding: 8px 15px;
-        /* Added horizontal padding to keep items off the screen edge */
-        width: 100%;
-        overflow-x: hidden;
-        /* Prevents horizontal scroll */
+        width: 100% !important;
+        max-width: 100vw !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
     }
 
-    /* 2. Fix the layout of the brand and toggle */
+    /* This container usually causes the overflow if it has a fixed width */
     .navbar .container,
-    .navbar-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
+    .container-fluid {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
 
-    /* 3. Adjust logo size to make room for the toggle */
+    /* Prevent the text from pushing the button off-screen */
     .company-name {
-        font-size: 14px;
-        white-space: nowrap;
-        /* Prevents the name from breaking into two lines */
-        max-width: 70%;
-        /* Ensures it doesn't push the toggle out */
-        overflow: hidden;
-        text-overflow: ellipsis;
+        font-size: 13px !important;
+        max-width: 60% !important;
+        /* Forces the name to stay on the left */
+        word-wrap: break-word;
     }
 
-    /* 4. Fix the Navbar Toggle button */
-    .navbar-toggler {
-        padding: 4px 8px;
-        margin-right: 0;
-        /* Reset any negative margins */
-        font-size: 18px;
-        /* Slightly smaller icon for mobile */
-    }
-
-    /* 5. Ensure the Hero Section doesn't cause overflow */
-    .hero-text {
-        padding: 0 15px;
-        width: 100%;
-        box-sizing: border-box;
-        /* Ensures padding doesn't add to width */
+    /* Ensure the toggle button stays on the right edge */
+    .navbar-toggler,
+    .navbar-toggler-icon {
+        margin-right: 0 !important;
+        padding: 5px !important;
+        flex-shrink: 0 !important;
+        /* Prevents the button from being squashed */
     }
 }
