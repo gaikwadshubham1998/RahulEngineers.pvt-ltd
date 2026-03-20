@@ -389,17 +389,17 @@ a {
 /* =========================================
    6. Footer
    ========================================= */
-footer {
+footer:not(.blockquote-footer) {
     background: var(--dark-bg);
     color: #fff;
     padding-top: 50px;
 }
 
-footer a {
+footer:not(.blockquote-footer) a {
     color: #b0b0b0;
 }
 
-footer a:hover {
+footer:not(.blockquote-footer) a:hover {
     color: var(--secondary-color);
     text-decoration: none;
 }
@@ -905,5 +905,72 @@ h6 {
     body {
         overflow-x: hidden !important;
         width: 100vw !important;
+    }
+}
+
+.inquiry-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: none;
+    z-index: 9999;
+    animation: fadeInUp 0.5s ease;
+}
+
+.inquiry-header {
+    background: #0d6efd;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inquiry-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.inquiry-body {
+    padding: 10px;
+}
+
+.inquiry-body textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.inquiry-body button {
+    width: 100%;
+    background: #25D366;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

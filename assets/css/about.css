@@ -80,3 +80,21 @@
     background-color: rgba(13, 110, 253, 0.1);
     border-radius: 6px;
 }
+
+/* Enforce a single font for the entire about page */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+div,
+li,
+.logo,
+.nav-link {
+    font-family: 'Poppins', sans-serif !important;
+}

@@ -21,7 +21,7 @@
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand custom-logo" href="#">
+            <a class="navbar-brand custom-logo" href="index.html">
                 <div class="logo-container">
                     <i class="fas fa-industry logo-icon"></i>
                     <div class="logo-text">
@@ -35,13 +35,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item "><a class="nav-link " href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link " href="/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/career.html">Careers</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="career.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item ms-3">
-                        <a href="/contact.html" class="btn btn-cta">Get Quote</a>
+                        <a href="contact.html" class="btn btn-cta">Get Quote</a>
                     </li>
                 </ul>
             </div>
@@ -155,10 +156,18 @@
                                     <textarea class="form-control" id="message" rows="4" required></textarea>
                                 </div>
 
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary-custom w-100 py-3">
-                                        Send Inquiry
+                                <div class="col-12 d-flex flex-column flex-md-row gap-3">
+
+                                    <!-- WhatsApp Button -->
+                                    <button type="button" id="whatsappBtn" class="btn btn-success w-100 py-3">
+                                        <i class="fab fa-whatsapp"></i> Send on WhatsApp
                                     </button>
+
+                                    <!-- Email Button -->
+                                    <button type="button" id="emailBtn" class="btn btn-primary w-100 py-3">
+                                        <i class="fas fa-envelope"></i> Send Email
+                                    </button>
+
                                 </div>
 
                             </div>
