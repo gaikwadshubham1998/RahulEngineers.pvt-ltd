@@ -1,0 +1,8 @@
+There is only ONE quick step you need to do:
+Go to web3forms.com and enter your email rahulindustries121@gmail.com under "Create your Access Key".
+They will instantly email you a unique string of characters called an access_key.
+Open 
+
+assets/js/script.js
+ and go to line 155.
+Replace "YOUR_WEB3FORMS_ACCESS_KEY_HERE" with the key they just emailed you!
