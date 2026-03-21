@@ -13,20 +13,23 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="/assets/images/Professional _RAHUL INDUSTRIES_ logo design.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="/assets/images/Professional _RAHUL INDUSTRIES_ logo design.png">
+    <link rel="apple-touch-icon" href="/assets/images/Professional _RAHUL INDUSTRIES_ logo design.png">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top bg-white shadow">
-        <div class="container">
+        <div class="container-fluid px-4 px-lg-5">
             <a class="navbar-brand custom-logo" href="index.html">
                 <div class="logo-container">
-                    <i class="fas fa-industry logo-icon"></i>
-                    <div class="logo-text">
-                        <span class="company-name">RAHUL INDUSTRIES</span>
-                        <span class="Tagline">Precision Manufacturing Solutions</span>
-                    </div>
+                    <img src="./assets/images/Rahul logo.png" alt="Rahul Industries Logo" class="logo-image">
                 </div>
             </a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -34,7 +37,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
@@ -52,8 +55,8 @@
     <!-- HEADER -->
     <section class="project-section">
         <div class="container">
-            <h1 class="fw-bold">Our Projects</h1>
-            <p>Engineering Excellence Delivered</p>
+            <h1 class="fw-bold" data-aos="fade-down">Our Projects</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Engineering Excellence Delivered</p>
         </div>
     </section>
     <!-- FILTER -->
@@ -430,10 +433,11 @@
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <!-- (Same footer as index.html for consistency) -->
-        <div class="container text-center text-md-start">
+        <div class="container-fluid px-4 px-lg-5 text-center text-md-start">
             <div class="row text-center text-md-start">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-warning">RAHUL INDUSTRIES</h5>
+                    <img src="./assets/images/Rahul logo white.png" alt="Rahul Industries Logo"
+                        class="footer-logo mb-3">
                     <p>Your trusted partner for industrial engineering solutions. We build with precision and
                         passion.
                     </p>
@@ -526,7 +530,7 @@
     </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="assets/js/script.js"></script>
 
 </body>
 

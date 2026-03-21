@@ -43,20 +43,17 @@
 </div>
 <!-- Loader End -->
 
-<body>
+<body class="parallax-bg">
 
 
 
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+        <div class="container-fluid px-4 px-lg-5">
             <a class="navbar-brand custom-logo" href="index.html">
                 <div class="logo-container">
-                    <i class="fas fa-industry logo-icon"></i>
-                    <div class="logo-text">
-                        <span class="company-name">RAHUL INDUSTRIES</span>
-                        <span class="Tagline">Precision Manufacturing Solutions</span>
-                    </div>
+                    <img src="./assets/images/Rahul logo.png" alt="Rahul Industries Logo" class="logo-image">
+
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -587,72 +584,93 @@
                 <p>Trusted by industries for precision & quality</p>
             </div>
 
-            <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <!-- DESKTOP CAROUSEL (Show 2 items) -->
+            <div id="reviewCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="4000">
                 <div class="carousel-inner">
-
-                    <!-- Review 1 -->
+                    <!-- Slide 1 -->
                     <div class="carousel-item active">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="glass-card text-center">
+                            <div class="col-md-5 mb-4 px-3">
+                                <div class="glass-card text-center h-100">
                                     <i class="fas fa-quote-left review-quote"></i>
-                                    <p class="review-text">
-                                        RAHUL INDUSTRIES delivered highly precise CNC components within tight
-                                        deadlines.
-                                        Excellent quality and professional support throughout the project.
-                                    </p>
+                                    <p class="review-text">RAHUL INDUSTRIES delivered highly precise CNC components within tight deadlines. Excellent quality and professional support throughout the project.</p>
                                     <h5 class="review-name">Rajesh Kulkarni</h5>
                                     <span class="review-company">Automotive Manufacturer, Pune</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Review 2 -->
-                    <div class="carousel-item">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="glass-card text-center">
+                            <div class="col-md-5 mb-4 px-3">
+                                <div class="glass-card text-center h-100">
                                     <i class="fas fa-quote-left review-quote"></i>
-                                    <p class="review-text">
-                                        Their VMC machining accuracy and commitment to timelines is outstanding.
-                                        We considerRAHUL INDUSTRIES a long-term manufacturing partner.
-                                    </p>
+                                    <p class="review-text">Their VMC machining accuracy and commitment to timelines is outstanding. We consider RAHUL INDUSTRIES a long-term manufacturing partner.</p>
                                     <h5 class="review-name">Amit Deshpande</h5>
                                     <span class="review-company">Industrial Automation Firm</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Review 3 -->
+                    <!-- Slide 2 -->
                     <div class="carousel-item">
                         <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="glass-card text-center">
+                            <div class="col-md-5 mb-4 px-3">
+                                <div class="glass-card text-center h-100">
                                     <i class="fas fa-quote-left review-quote"></i>
-                                    <p class="review-text">
-                                        Excellent workmanship, strict quality control, and transparent
-                                        communication.
-                                        Highly recommended for precision job work.
-                                    </p>
+                                    <p class="review-text">Excellent workmanship, strict quality control, and transparent communication. Highly recommended for precision job work.</p>
                                     <h5 class="review-name">Suresh Patil</h5>
                                     <span class="review-company">Engineering Solutions Provider</span>
                                 </div>
                             </div>
+                            <div class="col-md-5 mb-4 px-3">
+                                <div class="glass-card text-center h-100">
+                                    <i class="fas fa-quote-left review-quote"></i>
+                                    <p class="review-text">RAHUL INDUSTRIES delivered highly precise CNC components within tight deadlines. Excellent quality and professional support throughout the project.</p>
+                                    <h5 class="review-name">Rajesh Kulkarni</h5>
+                                    <span class="review-company">Automotive Manufacturer, Pune</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
-                <!-- Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                <button class="carousel-control-prev text-dark" type="button" data-bs-target="#reviewCarouselDesktop" data-bs-slide="prev" style="width: 5%;">
+                    <i class="fas fa-chevron-left fa-2x"></i>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                <button class="carousel-control-next text-dark" type="button" data-bs-target="#reviewCarouselDesktop" data-bs-slide="next" style="width: 5%;">
+                    <i class="fas fa-chevron-right fa-2x"></i>
+                </button>
+            </div>
+
+            <!-- MOBILE CAROUSEL (Show 1 item) -->
+            <div id="reviewCarouselMobile" class="carousel slide d-block d-md-none" data-bs-ride="carousel" data-bs-interval="4000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="glass-card text-center h-100 mx-5 my-3">
+                            <i class="fas fa-quote-left review-quote"></i>
+                            <p class="review-text">RAHUL INDUSTRIES delivered highly precise CNC components within tight deadlines. Excellent quality and professional support.</p>
+                            <h5 class="review-name">Rajesh Kulkarni</h5>
+                            <span class="review-company">Automotive, Pune</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="glass-card text-center h-100 mx-5 my-3">
+                            <i class="fas fa-quote-left review-quote"></i>
+                            <p class="review-text">VMC machining accuracy and commitment to timelines is outstanding. We consider them a long-term partner.</p>
+                            <h5 class="review-name">Amit Deshpande</h5>
+                            <span class="review-company">Automation Firm</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="glass-card text-center h-100 mx-5 my-3">
+                            <i class="fas fa-quote-left review-quote"></i>
+                            <p class="review-text">Excellent workmanship, strict quality control, and transparent communication. Highly recommended.</p>
+                            <h5 class="review-name">Suresh Patil</h5>
+                            <span class="review-company">Engineering Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev text-dark" type="button" data-bs-target="#reviewCarouselMobile" data-bs-slide="prev" style="width: 10%;">
+                    <i class="fas fa-chevron-left fa-2x"></i>
+                </button>
+                <button class="carousel-control-next text-dark" type="button" data-bs-target="#reviewCarouselMobile" data-bs-slide="next" style="width: 10%;">
+                    <i class="fas fa-chevron-right fa-2x"></i>
                 </button>
             </div>
         </div>
@@ -684,10 +702,11 @@
     <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
         <!-- (Same footer as index.html for consistency) -->
-        <div class="container text-center text-md-start">
+        <div class="container-fluid px-4 px-lg-5 text-center text-md-start">
             <div class="row text-center text-md-start">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 fw-bold text-warning">RAHUL INDUSTRIES</h5>
+                    <img src="./assets/images/Rahul logo white.png" alt="Rahul Industries Logo"
+                        class="footer-logo mb-3">
                     <p>Your trusted partner for industrial engineering solutions. We build with precision and
                         passion.
                     </p>
@@ -794,44 +813,44 @@
 
     <script>
 
-        // Disable Right Click
-        document.addEventListener("contextmenu", function (e) {
-            e.preventDefault();
-        });
+        // // Disable Right Click
+        // document.addEventListener("contextmenu", function (e) {
+        //     e.preventDefault();
+        // });
 
-        // Disable Keyboard Shortcuts
-        document.onkeydown = function (e) {
+        // // Disable Keyboard Shortcuts
+        // document.onkeydown = function (e) {
 
-            // F12
-            if (e.keyCode == 123) {
-                return false;
-            }
+        //     // F12
+        //     if (e.keyCode == 123) {
+        //         return false;
+        //     }
 
-            // Ctrl+Shift+I
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-                return false;
-            }
+        //     // Ctrl+Shift+I
+        //     if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        //         return false;
+        //     }
 
-            // Ctrl+Shift+J
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-                return false;
-            }
+        //     // Ctrl+Shift+J
+        //     if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        //         return false;
+        //     }
 
-            // Ctrl+U
-            if (e.ctrlKey && e.keyCode == 85) {
-                return false;
-            }
+        //     // Ctrl+U
+        //     if (e.ctrlKey && e.keyCode == 85) {
+        //         return false;
+        //     }
 
-            // Ctrl+S
-            if (e.ctrlKey && e.keyCode == 83) {
-                return false;
-            }
+        //     // Ctrl+S
+        //     if (e.ctrlKey && e.keyCode == 83) {
+        //         return false;
+        //     }
 
-            // Ctrl+C
-            if (e.ctrlKey && e.keyCode == 67) {
-                return false;
-            }
-        };
+        //     // Ctrl+C
+        //     if (e.ctrlKey && e.keyCode == 67) {
+        //         return false;
+        //     }
+        // };
 
     </script>
 
