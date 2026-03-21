@@ -907,7 +907,7 @@ h6 {
 
     /* This container usually causes the overflow if it has a fixed width */
     .navbar .container,
-    .container-fluid {
+    .navbar .container-fluid {
         display: flex !important;
         justify-content: space-between !important;
         align-items: center !important;
