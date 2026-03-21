@@ -756,8 +756,19 @@ h6 {
 
 
 /* ===============================
-   Navbar Active Link Styling
+   Mobile Fixes
    =============================== */
+@media (max-width: 768px) {
+    /* Prevent floating buttons from overlapping footer content */
+    footer {
+        padding-bottom: 90px !important;
+    }
+    
+    /* Reduce padding on mobile so cards don't become excessively tall */
+    #reviews .glass-card {
+        padding: 20px;
+    }
+}
 .navbar .nav-link {
     position: relative;
     font-weight: 500;
