@@ -56,9 +56,10 @@
     <section class="project-section">
         <div class="container">
             <h1 class="fw-bold" data-aos="fade-down">Our Projects</h1>
-            <p data-aos="fade-up" data-aos-delay="100">Engineering Excellence Delivered</p>
+            <p data-aos="fade-up">Engineering Excellence Delivered</p>
         </div>
     </section>
+
     <!-- FILTER -->
     <div class="container text-center my-4">
         <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
@@ -68,82 +69,114 @@
     </div>
 
     <!-- PROJECTS -->
-    <div class="container">
+    <div class="container project-cards-container">
         <div class="row g-4">
 
             <!-- Project 1 -->
             <div class="col-md-4 project-item" data-category="cnc">
-                <div class="card project-card shadow">
-                    <img src="./assets/images/vmc.png" class="card-img-top">
-                    <div class="card-body">
-                        <h5>CNC Machining</h5>
-                        <p class="text-muted">Precision CNC components</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">Know
-                            More</button>
+                <div class="card project-card border-0 h-100 rounded-4 shadow-sm">
+                    <div class="card-img-wrapper position-relative overflow-hidden rounded-top-4">
+                        <img src="./assets/images/vmc.png" class="card-img-top" alt="CNC Machining">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bold mb-2">CNC Machining</h5>
+                        <p class="text-muted small mb-3">Precision CNC components</p>
+                        <button class="btn btn-outline-primary rounded-pill px-4 btn-know-more" data-bs-toggle="modal"
+                            data-bs-target="#project1Modal">
+                            Know More <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
                     </div>
                 </div>
             </div>
 
             <!-- Project 2 -->
             <div class="col-md-4 project-item" data-category="fabrication">
-                <div class="card project-card shadow">
-                    <img src="./assets/images/toolroom.jpg">
-                    <div class="card-body">
-                        <h5>Fabrication</h5>
-                        <p class="text-muted">Industrial fabrication work</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">Know
-                            More</button>
+                <div class="card project-card border-0 h-100 rounded-4 shadow-sm">
+                    <div class="card-img-wrapper position-relative overflow-hidden rounded-top-4">
+                        <img src="./assets/images/toolroom.jpg" class="card-img-top" alt="Fabrication">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bold mb-2">Fabrication</h5>
+                        <p class="text-muted small mb-3">Industrial fabrication work</p>
+                        <button class="btn btn-outline-primary rounded-pill px-4 btn-know-more" data-bs-toggle="modal"
+                            data-bs-target="#project2Modal">
+                            Know More <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
                     </div>
                 </div>
             </div>
 
             <!-- Project 3 -->
             <div class="col-md-4 project-item" data-category="prototype">
-                <div class="card project-card shadow">
-                    <img src="./assets/images/common-types-of-CNC-machine-900x600 (1).jpg">
-                    <div class="card-body">
-                        <h5>Prototype Development</h5>
-                        <p class="text-muted">Rapid product prototyping</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">Know
-                            More</button>
+                <div class="card project-card border-0 h-100 rounded-4 shadow-sm">
+                    <div class="card-img-wrapper position-relative overflow-hidden rounded-top-4">
+                        <img src="./assets/images/common-types-of-CNC-machine-900x600 (1).jpg" class="card-img-top"
+                            alt="Prototype Development">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bold mb-2">Prototype Development</h5>
+                        <p class="text-muted small mb-3">Rapid product prototyping</p>
+                        <button class="btn btn-outline-primary rounded-pill px-4 btn-know-more" data-bs-toggle="modal"
+                            data-bs-target="#project3Modal">
+                            Know More <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
                     </div>
                 </div>
             </div>
+
             <!-- Project 4 -->
             <div class="col-md-4 project-item" data-category="cnc">
-                <div class="card project-card shadow">
-                    <img src="./assets/images/pexels-photo-269077.jpeg">
-                    <div class="card-body">
-                        <h5>VMC Milling</h5>
-                        <p class="text-muted">High precision milling work</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project4Modal">Know
-                            More</button>
+                <div class="card project-card border-0 h-100 rounded-4 shadow-sm">
+                    <div class="card-img-wrapper position-relative overflow-hidden rounded-top-4">
+                        <img src="./assets/images/pexels-photo-269077.jpeg" class="card-img-top" alt="VMC Milling">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bold mb-2">VMC Milling</h5>
+                        <p class="text-muted small mb-3">High precision milling work</p>
+                        <button class="btn btn-outline-primary rounded-pill px-4 btn-know-more" data-bs-toggle="modal"
+                            data-bs-target="#project4Modal">
+                            Know More <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
                     </div>
                 </div>
             </div>
 
             <!-- Project 5 -->
             <div class="col-md-4 project-item" data-category="fabrication">
-                <div class="card project-card shadow">
-                    <img src="./assets/images/vmc.png">
-                    <div class="card-body">
-                        <h5>Heavy Structure</h5>
-                        <p class="text-muted">Industrial steel structures</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project5Modal">Know
-                            More</button>
+                <div class="card project-card border-0 h-100 rounded-4 shadow-sm">
+                    <div class="card-img-wrapper position-relative overflow-hidden rounded-top-4">
+                        <img src="./assets/images/vmc.png" class="card-img-top" alt="Heavy Structure">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bold mb-2">Heavy Structure</h5>
+                        <p class="text-muted small mb-3">Industrial steel structures</p>
+                        <button class="btn btn-outline-primary rounded-pill px-4 btn-know-more" data-bs-toggle="modal"
+                            data-bs-target="#project5Modal">
+                            Know More <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
                     </div>
                 </div>
             </div>
 
             <!-- Project 6 -->
             <div class="col-md-4 project-item" data-category="prototype">
-                <div class="card project-card shadow">
-                    <img src="./assets/images/vmc.png">
-                    <div class="card-body">
-                        <h5>Machine Design</h5>
-                        <p class="text-muted">Custom machine development</p>
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project6Modal">Know
-                            More</button>
+                <div class="card project-card border-0 h-100 rounded-4 shadow-sm">
+                    <div class="card-img-wrapper position-relative overflow-hidden rounded-top-4">
+                        <img src="./assets/images/vmc.png" class="card-img-top" alt="Machine Design">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-body p-4 text-center">
+                        <h5 class="fw-bold mb-2">Machine Design</h5>
+                        <p class="text-muted small mb-3">Custom machine development</p>
+                        <button class="btn btn-outline-primary rounded-pill px-4 btn-know-more" data-bs-toggle="modal"
+                            data-bs-target="#project6Modal">
+                            Know More <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -152,48 +185,56 @@
     </div>
     <br>
 
-
-
     <!-- MODAL 1 -->
-    <div class="modal fade" id="project1Modal">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="fw-bold">CNC Machining Project</h4>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
+    <div class="modal fade project-modal" id="project1Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-4 overflow-hidden">
+                <div class="modal-header border-0 pb-0 position-absolute w-100" style="z-index: 10;">
+                    <button type="button" class="btn-close bg-white rounded-circle p-2 m-3 shadow-sm"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="./assets/images/vmc.png" class="img-fluid h-100 w-100 object-fit-cover modal-img"
+                                alt="CNC Machining">
+                        </div>
+                        <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold text-dark mb-2">CNC Machining</h3>
+                            <p class="text-muted mb-4 pb-2 border-bottom">High precision CNC machining for automotive
+                                components with tight tolerances.</p>
 
-                <div class="modal-body">
-                    <img src="./assets/images/vmc.png" class="img-fluid rounded mb-4">
-
-                    <div class="container">
-                        <h5 class="fw-bold">Project Overview</h5>
-                        <p>High precision CNC machining for automotive components with tight tolerances.</p>
-
-                        <div class="row my-4">
-                            <div class="col-md-4">
-                                <h6>Material</h6>
-                                <p>Stainless Steel</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-cube text-primary me-2"></i>Stainless Steel</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-crosshairs text-primary me-2"></i>±0.01 mm Accuracy</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-car text-primary me-2"></i>Automotive</span>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Accuracy</h6>
-                                <p>±0.01 mm</p>
+
+                            <h6 class="fw-bold text-uppercase text-primary mb-3 text-sm">Key Highlights</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Advanced CNC
+                                    programming</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Precision
+                                    finishing</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Quality inspection
+                                </li>
+                            </ul>
+
+                            <div class="alert alert-light border-start border-primary border-4 py-2 px-3 mb-0">
+                                <small class="text-dark fw-medium mb-0">Note: Delivered high accuracy and consistent
+                                    production quality.</small>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Industry</h6>
-                                <p>Automotive</p>
+                            <div class="mt-4 mt-2">
+                                <a href="https://wa.me/919890158854?text=Hi,%20I'm%20interested%20in%20your%20CNC%20Machining%20project.%20Please%20provide%20more%20details."
+                                    target="_blank"
+                                    class="btn btn-success rounded-pill px-4 pt-2 pb-2 shadow-sm w-100 fw-medium">
+                                    <i class="fab fa-whatsapp me-2 fs-5 align-middle"></i> Inquire via WhatsApp
+                                </a>
                             </div>
                         </div>
-
-                        <h5>Key Highlights</h5>
-                        <ul>
-                            <li>Advanced CNC programming</li>
-                            <li>Precision finishing</li>
-                            <li>Quality inspection</li>
-                        </ul>
-
-                        <h5 class="mt-4">Notes</h5>
-                        <p class="text-muted">Delivered high accuracy and consistent production quality.</p>
                     </div>
                 </div>
             </div>
@@ -201,233 +242,285 @@
     </div>
 
     <!-- MODAL 2 -->
-    <div class="modal fade" id="project2Modal">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="fw-bold">Fabrication Project</h4>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
+    <div class="modal fade project-modal" id="project2Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-4 overflow-hidden">
+                <div class="modal-header border-0 pb-0 position-absolute w-100" style="z-index: 10;">
+                    <button type="button" class="btn-close bg-white rounded-circle p-2 m-3 shadow-sm"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="./assets/images/toolroom.jpg"
+                                class="img-fluid h-100 w-100 object-fit-cover modal-img" alt="Fabrication">
+                        </div>
+                        <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold text-dark mb-2">Fabrication Project</h3>
+                            <p class="text-muted mb-4 pb-2 border-bottom">Heavy fabrication structures designed for
+                                industrial applications.</p>
 
-                <div class="modal-body">
-                    <img src="https://via.placeholder.com/1200x400" class="img-fluid mb-4">
-
-                    <div class="container">
-                        <h5>Project Overview</h5>
-                        <p>Heavy fabrication structures designed for industrial applications.</p>
-
-                        <div class="row my-4">
-                            <div class="col-md-4">
-                                <h6>Material</h6>
-                                <p>Mild Steel</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-layer-group text-primary me-2"></i>Mild Steel</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-fire text-primary me-2"></i>Welding & Cutting</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-industry text-primary me-2"></i>Manufacturing</span>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Process</h6>
-                                <p>Welding & Cutting</p>
+
+                            <h6 class="fw-bold text-uppercase text-primary mb-3 text-sm">Key Highlights</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Strong structural
+                                    design</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>High durability
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Industrial-grade
+                                    welding</li>
+                            </ul>
+
+                            <div class="alert alert-light border-start border-primary border-4 py-2 px-3 mb-0">
+                                <small class="text-dark fw-medium mb-0">Note: Built for long-term heavy-duty usage in
+                                    industrial environments.</small>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Industry</h6>
-                                <p>Manufacturing</p>
+                            <div class="mt-4 mt-2">
+                                <a href="https://wa.me/919890158854?text=Hi,%20I'm%20interested%20in%20your%20Fabrication%20Project.%20Please%20provide%20more%20details."
+                                    target="_blank"
+                                    class="btn btn-success rounded-pill px-4 pt-2 pb-2 shadow-sm w-100 fw-medium">
+                                    <i class="fab fa-whatsapp me-2 fs-5 align-middle"></i> Inquire via WhatsApp
+                                </a>
                             </div>
                         </div>
-
-                        <h5>Key Highlights</h5>
-                        <ul>
-                            <li>Strong structural design</li>
-                            <li>High durability</li>
-                            <li>Industrial-grade welding</li>
-                        </ul>
-
-                        <h5 class="mt-4">Notes</h5>
-                        <p class="text-muted">Built for long-term heavy-duty usage in industrial environments.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- MODAL 3 -->
-    <div class="modal fade" id="project3Modal">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="fw-bold">Prototype Development</h4>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
+    <div class="modal fade project-modal" id="project3Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-4 overflow-hidden">
+                <div class="modal-header border-0 pb-0 position-absolute w-100" style="z-index: 10;">
+                    <button type="button" class="btn-close bg-white rounded-circle p-2 m-3 shadow-sm"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="./assets/images/common-types-of-CNC-machine-900x600 (1).jpg"
+                                class="img-fluid h-100 w-100 object-fit-cover modal-img" alt="Prototype Development">
+                        </div>
+                        <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold text-dark mb-2">Prototype Development</h3>
+                            <p class="text-muted mb-4 pb-2 border-bottom">Rapid prototyping for new product development
+                                and testing.</p>
 
-                <div class="modal-body">
-                    <img src="https://via.placeholder.com/1200x400" class="img-fluid mb-4">
-
-                    <div class="container">
-                        <h5>Project Overview</h5>
-                        <p>Rapid prototyping for new product development and testing.</p>
-
-                        <div class="row my-4">
-                            <div class="col-md-4">
-                                <h6>Process</h6>
-                                <p>3D Modeling</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-cubes text-primary me-2"></i>3D Modeling</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-bolt text-primary me-2"></i>Fast Turnaround</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-vial text-primary me-2"></i>Testing</span>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Speed</h6>
-                                <p>Fast Turnaround</p>
+
+                            <h6 class="fw-bold text-uppercase text-primary mb-3 text-sm">Key Highlights</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Quick development
+                                    cycle</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Design validation
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Performance
+                                    testing</li>
+                            </ul>
+
+                            <div class="alert alert-light border-start border-primary border-4 py-2 px-3 mb-0">
+                                <small class="text-dark fw-medium mb-0">Note: Ensured product feasibility before mass
+                                    production.</small>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Usage</h6>
-                                <p>Testing</p>
+                            <div class="mt-4 mt-2">
+                                <a href="https://wa.me/919890158854?text=Hi,%20I'm%20interested%20in%20your%20Prototype%20Development%20services.%20Please%20provide%20more%20details."
+                                    target="_blank"
+                                    class="btn btn-success rounded-pill px-4 pt-2 pb-2 shadow-sm w-100 fw-medium">
+                                    <i class="fab fa-whatsapp me-2 fs-5 align-middle"></i> Inquire via WhatsApp
+                                </a>
                             </div>
                         </div>
-
-                        <h5>Key Highlights</h5>
-                        <ul>
-                            <li>Quick development cycle</li>
-                            <li>Design validation</li>
-                            <li>Performance testing</li>
-                        </ul>
-
-                        <h5 class="mt-4">Notes</h5>
-                        <p class="text-muted">Ensured product feasibility before mass production.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal-4 -->
-    <div class="modal fade" id="project4Modal">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="fw-bold">VMC Milling</h4>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <div class="modal-body">
-                    <img src="https://via.placeholder.com/1200x400" class="img-fluid mb-4">
-
-                    <div class="container">
-                        <h5>Project Overview</h5>
-                        <p>High precision VMC milling operations for industrial components.</p>
-
-                        <div class="row my-4">
-                            <div class="col-md-4">
-                                <h6>Machine</h6>
-                                <p>VMC</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h6>Process</h6>
-                                <p>Multi-axis machining</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h6>Industry</h6>
-                                <p>Engineering</p>
-                            </div>
-                        </div>
-
-                        <h5>Key Highlights</h5>
-                        <ul>
-                            <li>High-speed machining</li>
-                            <li>Precision tooling</li>
-                            <li>Complex part handling</li>
-                        </ul>
-
-                        <h5 class="mt-4">Notes</h5>
-                        <p class="text-muted">Handled complex geometries with excellent surface finish.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- modal-5 -->
-
-    <div class="modal fade" id="project5Modal">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="fw-bold">Heavy Fabrication</h4>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
+    <!-- MODAL 4 -->
+    <div class="modal fade project-modal" id="project4Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-4 overflow-hidden">
+                <div class="modal-header border-0 pb-0 position-absolute w-100" style="z-index: 10;">
+                    <button type="button" class="btn-close bg-white rounded-circle p-2 m-3 shadow-sm"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="./assets/images/pexels-photo-269077.jpeg"
+                                class="img-fluid h-100 w-100 object-fit-cover modal-img" alt="VMC Milling">
+                        </div>
+                        <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold text-dark mb-2">VMC Milling</h3>
+                            <p class="text-muted mb-4 pb-2 border-bottom">High precision VMC milling operations for
+                                industrial components.</p>
 
-                <div class="modal-body">
-                    <img src="https://via.placeholder.com/1200x400" class="img-fluid mb-4">
-
-                    <div class="container">
-                        <h5>Project Overview</h5>
-                        <p>Large-scale industrial fabrication project for structural applications.</p>
-
-                        <div class="row my-4">
-                            <div class="col-md-4">
-                                <h6>Material</h6>
-                                <p>Steel</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-cogs text-primary me-2"></i>VMC Machine</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-sync text-primary me-2"></i>Multi-axis Machining</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-tools text-primary me-2"></i>Engineering</span>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Load</h6>
-                                <p>Heavy Duty</p>
+
+                            <h6 class="fw-bold text-uppercase text-primary mb-3 text-sm">Key Highlights</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>High-speed
+                                    machining</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Precision tooling
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Complex part
+                                    handling</li>
+                            </ul>
+
+                            <div class="alert alert-light border-start border-primary border-4 py-2 px-3 mb-0">
+                                <small class="text-dark fw-medium mb-0">Note: Handled complex geometries with excellent
+                                    surface finish.</small>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Industry</h6>
-                                <p>Construction</p>
+                            <div class="mt-4 mt-2">
+                                <a href="https://wa.me/919890158854?text=Hi,%20I'm%20interested%20in%20your%20VMC%20Milling%20services.%20Please%20provide%20more%20details."
+                                    target="_blank"
+                                    class="btn btn-success rounded-pill px-4 pt-2 pb-2 shadow-sm w-100 fw-medium">
+                                    <i class="fab fa-whatsapp me-2 fs-5 align-middle"></i> Inquire via WhatsApp
+                                </a>
                             </div>
                         </div>
-
-                        <h5>Key Highlights</h5>
-                        <ul>
-                            <li>High load-bearing capacity</li>
-                            <li>Durable construction</li>
-                            <li>Precision alignment</li>
-                        </ul>
-
-                        <h5 class="mt-4">Notes</h5>
-                        <p class="text-muted">Designed for extreme industrial conditions and long life.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- modal-6 -->
-    <div class="modal fade" id="project6Modal">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="fw-bold">Machine Design</h4>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
+    <!-- MODAL 5 -->
+    <div class="modal fade project-modal" id="project5Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-4 overflow-hidden">
+                <div class="modal-header border-0 pb-0 position-absolute w-100" style="z-index: 10;">
+                    <button type="button" class="btn-close bg-white rounded-circle p-2 m-3 shadow-sm"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="./assets/images/vmc.png" class="img-fluid h-100 w-100 object-fit-cover modal-img"
+                                alt="Heavy Structure">
+                        </div>
+                        <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold text-dark mb-2">Heavy Fabrication</h3>
+                            <p class="text-muted mb-4 pb-2 border-bottom">Large-scale industrial fabrication project for
+                                structural applications.</p>
 
-                <div class="modal-body">
-                    <img src="https://via.placeholder.com/1200x400" class="img-fluid mb-4">
-
-                    <div class="container">
-                        <h5>Project Overview</h5>
-                        <p>Custom machine design and development from concept to production.</p>
-
-                        <div class="row my-4">
-                            <div class="col-md-4">
-                                <h6>Design</h6>
-                                <p>3D CAD</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-cube text-primary me-2"></i>Steel</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-weight-hanging text-primary me-2"></i>Heavy Duty Load</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-hard-hat text-primary me-2"></i>Construction</span>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Process</h6>
-                                <p>End-to-End</p>
+
+                            <h6 class="fw-bold text-uppercase text-primary mb-3 text-sm">Key Highlights</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>High load-bearing
+                                    capacity</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Durable
+                                    construction</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Precision
+                                    alignment</li>
+                            </ul>
+
+                            <div class="alert alert-light border-start border-primary border-4 py-2 px-3 mb-0">
+                                <small class="text-dark fw-medium mb-0">Note: Designed for extreme industrial conditions
+                                    and long life.</small>
                             </div>
-                            <div class="col-md-4">
-                                <h6>Usage</h6>
-                                <p>Industrial Automation</p>
+                            <div class="mt-4 mt-2">
+                                <a href="https://wa.me/919890158854?text=Hi,%20I'm%20interested%20in%20your%20Heavy%20Fabrication%20services.%20Please%20provide%20more%20details."
+                                    target="_blank"
+                                    class="btn btn-success rounded-pill px-4 pt-2 pb-2 shadow-sm w-100 fw-medium">
+                                    <i class="fab fa-whatsapp me-2 fs-5 align-middle"></i> Inquire via WhatsApp
+                                </a>
                             </div>
                         </div>
-
-                        <h5>Key Highlights</h5>
-                        <ul>
-                            <li>Custom engineering solutions</li>
-                            <li>Prototype to production</li>
-                            <li>Performance optimization</li>
-                        </ul>
-
-                        <h5 class="mt-4">Notes</h5>
-                        <p class="text-muted">Focused on efficiency, durability, and innovation.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- MODAL 6 -->
+    <div class="modal fade project-modal" id="project6Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow rounded-4 overflow-hidden">
+                <div class="modal-header border-0 pb-0 position-absolute w-100" style="z-index: 10;">
+                    <button type="button" class="btn-close bg-white rounded-circle p-2 m-3 shadow-sm"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <img src="./assets/images/vmc.png" class="img-fluid h-100 w-100 object-fit-cover modal-img"
+                                alt="Machine Design">
+                        </div>
+                        <div class="col-md-7 p-4 p-md-5 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold text-dark mb-2">Machine Design</h3>
+                            <p class="text-muted mb-4 pb-2 border-bottom">Custom machine design and development from
+                                concept to production.</p>
+
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-desktop text-primary me-2"></i>3D CAD Design</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-project-diagram text-primary me-2"></i>End-to-End Process</span>
+                                <span class="badge bg-light text-dark px-3 py-2 border"><i
+                                        class="fas fa-robot text-primary me-2"></i>Industrial Automation</span>
+                            </div>
+
+                            <h6 class="fw-bold text-uppercase text-primary mb-3 text-sm">Key Highlights</h6>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Custom engineering
+                                    solutions</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Prototype to
+                                    production</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Performance
+                                    optimization</li>
+                            </ul>
+
+                            <div class="alert alert-light border-start border-primary border-4 py-2 px-3 mb-0">
+                                <small class="text-dark fw-medium mb-0">Note: Focused on efficiency, durability, and
+                                    innovation.</small>
+                            </div>
+                            <div class="mt-4 mt-2">
+                                <a href="https://wa.me/919890158854?text=Hi,%20I'm%20interested%20in%20your%20Machine%20Design%20services.%20Please%20provide%20more%20details."
+                                    target="_blank"
+                                    class="btn btn-success rounded-pill px-4 pt-2 pb-2 shadow-sm w-100 fw-medium">
+                                    <i class="fab fa-whatsapp me-2 fs-5 align-middle"></i> Inquire via WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- ================= FOOTER ================= -->
     <!-- Footer -->
@@ -477,14 +570,14 @@
                 <div class="col-12 col-md-5 col-lg-4">
                     <div class="text-center text-md-end social-links">
                         <ul class="list-unstyled d-flex justify-content-center gap-3 mb-0 p-0">
-                            <li><a href="#" class="btn-floating btn-sm text-white"
-                                    style="font-size: 23px;"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="#" class="btn-floating btn-sm text-white"
-                                    style="font-size: 23px;"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#" class="btn-floating btn-sm text-white"
-                                    style="font-size: 23px;"><i class="fab fa-google-plus"></i></a></li>
-                            <li><a href="#" class="btn-floating btn-sm text-white"
-                                    style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-facebook"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-google-plus"></i></a></li>
+                            <li><a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
