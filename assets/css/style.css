@@ -603,11 +603,17 @@ section {
     position: relative;
     z-index: 2;
     box-shadow: 0 5px 15px rgba(255, 202, 40, 0.4);
+    transition: transform 0.3s ease-in-out;
 }
 
 .step-content h5 {
     font-weight: 700;
     margin-bottom: 10px;
+}
+
+.process-step:hover .step-number {
+    transform: scale(1.15) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 202, 40, 0.6);
 }
 
 /* Connecting line for desktop */
@@ -1069,5 +1075,94 @@ h6 {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/* =========================================
+   Industry Marquee Animation
+   ========================================= */
+.industry-marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 20px 0;
+}
+
+.industry-marquee::before,
+.industry-marquee::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15rem;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.industry-marquee::before {
+    left: 0;
+    background: linear-gradient(to right, #212529, transparent);
+}
+
+.industry-marquee::after {
+    right: 0;
+    background: linear-gradient(to left, #212529, transparent);
+}
+
+.industry-track {
+    display: inline-flex;
+    animation: scroll-industries 30s linear infinite;
+}
+
+.industry-track:hover {
+    animation-play-state: paused;
+}
+
+.industry-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    padding: 30px;
+    margin: 0 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+.industry-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 202, 40, 0.15);
+    border-color: var(--secondary-color, #ffca28);
+}
+
+.industry-item h5 {
+    margin-top: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+@keyframes scroll-industries {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 8 - 30px * 8)); }
+}
+
+@media (max-width: 768px) {
+    .industry-marquee::before,
+    .industry-marquee::after {
+        width: 3rem;
+    }
+    .industry-item {
+        width: 200px;
+        padding: 20px;
+        margin: 0 10px;
+    }
+    @keyframes scroll-industries {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-200px * 8 - 20px * 8)); }
     }
 }

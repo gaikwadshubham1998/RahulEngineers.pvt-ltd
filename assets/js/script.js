@@ -58,6 +58,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+    // Check for project service in URL and auto-select
+    const urlParams = new URLSearchParams(window.location.search);
+    const serviceParam = urlParams.get('service');
+    if (serviceParam) {
+        const serviceSelect = document.getElementById("service");
+        if (serviceSelect) {
+            for (let i = 0; i < serviceSelect.options.length; i++) {
+                if (serviceSelect.options[i].text === serviceParam) {
+                    serviceSelect.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    }
+
     // Navbar scroll effect
     window.addEventListener('scroll', function() {
         const navbar = document.querySelector('.navbar');
@@ -172,6 +187,15 @@ if (emailBtn) {
 ${data.message}
 `;
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const isProject = urlParams.get('type') === 'project';
+
+        // Choose credentials based on inquiry type
+        // Note: Free Web3Forms access key ties to the "Main" email.
+        // User must insert their two keys below.
+        let accessKey = isProject ? "YOUR_PROJECT_WEB3FORMS_ACCESS_KEY" : "YOUR_NORMAL_WEB3FORMS_ACCESS_KEY";
+        let ccEmail = isProject ? "rahulindustries121@gmail.com" : "purchasing@rahulindustries.in";
+
         // Send Email via Web3Forms (Pure JS, No Backend)
         fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -181,15 +205,15 @@ ${data.message}
             },
             body: JSON.stringify({
                 // 👉 Get your free access key from https://web3forms.com/
-                access_key: "YOUR_WEB3FORMS_ACCESS_KEY_HERE",
+                access_key: accessKey,
 
                 name: data.name,
                 email: data.email, // ensures you can hit 'reply' to their email directly
-                subject: "New Website Inquiry - " + data.name,
+                subject: (isProject ? "[Project Specification] " : "") + "New Website Inquiry - " + data.name,
                 message: emailMessage,
 
                 // Add your cc email below
-                cc: "purchasing@rahulindustries.in"
+                cc: ccEmail
             }),
         })
             .then(async (response) => {
