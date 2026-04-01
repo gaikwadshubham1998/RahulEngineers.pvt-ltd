@@ -4,5 +4,5 @@ They will instantly email you a unique string of characters called an access_key
 Open 
 
 assets/js/script.js
- and go to line 155.
+ and go to line 196.
 Replace "YOUR_WEB3FORMS_ACCESS_KEY_HERE" with the key they just emailed you!
