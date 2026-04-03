@@ -744,19 +744,42 @@ h6 {
 /* Call */
 .fab-btn.call {
     background-color: var(--primary-color);
-    animation: pulse-pop-call 2s infinite 1s; /* 1s offset so they alternate */
+    animation: pulse-pop-call 2s infinite 1s;
+    /* 1s offset so they alternate */
 }
 
 @keyframes pulse-pop {
-    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-    70% { transform: scale(1.15); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+
+    70% {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
 
 @keyframes pulse-pop-call {
-    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(12, 4, 119, 0.7); }
-    70% { transform: scale(1.15); box-shadow: 0 0 0 15px rgba(12, 4, 119, 0); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(12, 4, 119, 0); }
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(12, 4, 119, 0.7);
+    }
+
+    70% {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 15px rgba(12, 4, 119, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(12, 4, 119, 0);
+    }
 }
 
 
@@ -765,11 +788,12 @@ h6 {
    Mobile Fixes
    =============================== */
 @media (max-width: 768px) {
+
     /* Prevent floating buttons from overlapping footer content */
     footer {
         padding-bottom: 90px !important;
     }
-    
+
     /* Reduce padding on mobile so cards don't become excessively tall */
     #reviews .glass-card {
         padding: 20px;
@@ -798,6 +822,7 @@ h6 {
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--primary-color);
 }
+
 .navbar .nav-link {
     position: relative;
     font-weight: 500;
@@ -1147,22 +1172,50 @@ h6 {
 }
 
 @keyframes scroll-industries {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-250px * 8 - 30px * 8)); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 8 - 30px * 8));
+    }
 }
 
 @media (max-width: 768px) {
+
     .industry-marquee::before,
     .industry-marquee::after {
         width: 3rem;
     }
+
     .industry-item {
         width: 200px;
         padding: 20px;
         margin: 0 10px;
     }
+
     @keyframes scroll-industries {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-200px * 8 - 20px * 8)); }
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-200px * 8 - 20px * 8));
+        }
     }
+}
+
+footer .col-md-2 a::before,
+footer .col-md-3 a::before {
+    content: "➤ ";
+}
+
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    padding-left: 5px;
+    color: #ffc107 !important;
 }

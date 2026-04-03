@@ -41,3 +41,96 @@
     border-radius: 50%;
     margin-right: 15px;
 }
+
+.location-section {
+    background: #f8f9fa;
+}
+
+.location-section h2 {
+    position: relative;
+    display: inline-block;
+}
+
+.location-section h2::after {
+    content: "";
+    width: 60%;
+    height: 3px;
+    background: #ffc107;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 5px;
+}
+
+/* Map Styling */
+.map-wrapper {
+    position: relative;
+}
+
+.map-wrapper iframe {
+    filter: grayscale(20%);
+}
+
+/* Floating Info Card */
+.map-card {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 250px;
+}
+
+.map-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.map-wrapper iframe {
+    transition: transform 0.4s ease;
+}
+
+.map-wrapper:hover iframe {
+    transform: scale(1.02);
+}
+
+.map-card::before {
+    content: "📍";
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 24px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .map-card {
+        position: static;
+        margin: 15px;
+        max-width: 100%;
+    }
+}
+
+.map-card h5 {
+    color: #333;
+}
+
+.map-card p {
+    font-size: 14px;
+    color: #555;
+}
