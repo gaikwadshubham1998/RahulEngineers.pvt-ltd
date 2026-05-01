@@ -194,7 +194,7 @@ ${data.message}
         // Note: Free Web3Forms access key ties to the "Main" email.
         // User must insert their two keys below.
         let accessKey = isProject ? "YOUR_PROJECT_WEB3FORMS_ACCESS_KEY" : "YOUR_NORMAL_WEB3FORMS_ACCESS_KEY";
-        let ccEmail = isProject ? "engineering@rahulindustries.in" : "purchasing@rahulindustries.in,rahulindustries121@gmail.com";
+        let ccEmail = isProject ? "engineering@rahulindustries.in" : "purchasing@rahulindustries.in,engineering@rahulindustries.in";
 
         // Send Email via Web3Forms (Pure JS, No Backend)
         fetch("https://api.web3forms.com/submit", {
